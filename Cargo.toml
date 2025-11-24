@@ -1,0 +1,7 @@
+[package]
+name = "stat509-sort-experiment"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sort_algorithms = "0.3.5"
