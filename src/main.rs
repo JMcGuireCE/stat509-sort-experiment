@@ -1,13 +1,11 @@
 // Copyright (c) Josh McGuire, 2025
 
 use rand::prelude::*;
-use chrono::prelude::*;
 use sort_algorithms::quick_sort;
 use std::fs::OpenOptions;
 use std::time::Instant;
 use std::time::Duration;
 use sort_algorithms::merge_sort;
-use std::fs::File;
 use std::io::Write;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -56,8 +54,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     for i in 0..trials {
         writeln!(results,
                  "{}, {}",
-                 merge_times[i].as_micros(),
-                 quick_times[i].as_micros())?;   
+                 merge_times[i].as_nanos(),
+                 quick_times[i].as_nanos())?;   
     }
 
     Ok(())
