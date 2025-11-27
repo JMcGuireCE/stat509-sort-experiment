@@ -30,7 +30,7 @@ merge sort and quick sort is between -308311.4 and -304986.3 nano seconds.
 3. Conclusion
 
 Because the entire confidence interval is negative, we have evidence that 
-quick sort is faster than merge sort on average.
+quick sort is slower than merge sort on average.
 
 
 - Comparing variance of speed of quick sort and merge sort:
